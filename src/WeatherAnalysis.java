@@ -8,6 +8,7 @@ public class WeatherAnalysis {
         double overAvg = overAvg(dayList, avgVar);  //how many days went over the average
         System.out.println("Average temp = " + Math.round(avgVar*10)/10.); //print average temp rounded to the tenth
         System.out.println(overAvg + " days were above average."); //print how many days were over avg
+
     }
     public static int[] arrayGen(int totDays){ //creates the array of all days high temps
         Scanner input = new Scanner(System.in);
