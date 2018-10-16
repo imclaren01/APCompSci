@@ -1,8 +1,7 @@
 
 public class AdvancedArrayPractice {
     public static void main(String[] args){
-        for(int i = 0; i < 10; i++)
-                System.out.println(LIAMmostFrequentDigit(100*i +235934));
+        System.out.println(LIAMmostFrequentDigit(100*i +235934));
     }
     public static int LIAMmostFrequentDigit(int pass){
         int[] arr = new int[10];
