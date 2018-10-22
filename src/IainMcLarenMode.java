@@ -1,7 +1,7 @@
 
-public class AdvancedArrayPractice {
+public class IainMcLarenMode {
     public static void main(String[] args){
-        System.out.println(LIAMmostFrequentDigit(235934));
+        System.out.println(LIAMmostFrequentDigit(1133));
     }
     public static int LIAMmostFrequentDigit(int pass){
         int[] arr = new int[10];
@@ -9,7 +9,7 @@ public class AdvancedArrayPractice {
             arr[pass%10] +=1 ;//set index of the digit found to be one higher
             pass = pass/10;//get rid of past digits
         }
-        int max = -1;
+        int max =-1;
         int loco = -1;
         for(int i = 0; i<10; i++){
             if(arr[i]>max){ //if the max number of one digit is is less than the number of digits at an index of i
