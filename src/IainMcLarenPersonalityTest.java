@@ -27,16 +27,16 @@ public class IainMcLarenPersonalityTest {
             i++;
         }
     }
-    public static void test(String line, int i)throws FileNotFoundException{
+    public static void test(String line, int i){
         if(i%2 == 1)//If the line number is even or odd (if odd, the line is a name, if even, it holds the test results
             nameOut(line);
         else
            resultsOut(line);
     }
-    public static void nameOut(String line)throws FileNotFoundException{
+    public static void nameOut(String line) {
         output.println(line+":"); //prints the name of the test taker
     }
-    public static void resultsOut(String line) throws FileNotFoundException{
+    public static void resultsOut(String line) {
         line = line.toUpperCase();
         int[] ACount = new int[4];
         int[] BCount = new int[4];
