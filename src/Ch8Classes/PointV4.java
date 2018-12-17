@@ -5,15 +5,18 @@ public class PointV4 {
     //Synonyms: state, state fields, fields, instance variables
     private int x;
     private int y;
-
+    //static fields are owned by class NOT THE OBJECT
+    private static int objCount;
     public PointV4(int x, int y){
         this.x = x;
         this.y = y;
+        objCount++;
     }
     //default constructor
     public PointV4(){
         x = 0;
         y = 0;
+        objCount++;
     }
     public int getX(){
         return x;
@@ -26,6 +29,9 @@ public class PointV4 {
     }
     public void setY(int y){
         this.y = y;
+    }
+    public int getObjCount(){
+        return objCount;
     }
     //behaviors for the Point class (methods)
     //Synonyms: behaviors, methods, object methods

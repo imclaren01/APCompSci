@@ -10,6 +10,6 @@ public class InBackpack {
     private boolean waterBottle;
     private boolean hasLaptop;
     public InBackpack(int pencils, int notebooks, int binders, boolean lunch, String color, String brand, boolean waterBottle, boolean hasLaptop){
-        
+
     }
 }
