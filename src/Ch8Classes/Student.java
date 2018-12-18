@@ -3,7 +3,7 @@ package Ch8Classes;
 
 import java.math.BigInteger;
 
-public class StudentV1 {
+public class Student {
     //state fields
     private String name;
     private int grade;
@@ -16,14 +16,14 @@ public class StudentV1 {
     private char gender;
     private int attendance;
     //constructors
-    public StudentV1(String name, int dob, char gender, String address, int grade){
+    public Student(String name, int dob, char gender, String address, int grade){
         this.name = name;
         this.dob = dob;
         this.gender = gender;
         this.address = address;
         this.grade = grade;
     }
-    public StudentV1(String name, int dob, char gender, String address, int grade, double gpa){
+    public Student(String name, int dob, char gender, String address, int grade, double gpa){
         this.name = name;
         this.dob = dob;
         this.gender = gender;
@@ -71,4 +71,5 @@ public class StudentV1 {
     public int getAttendance() {
         return attendance;
     }
+    //No setters
 }
