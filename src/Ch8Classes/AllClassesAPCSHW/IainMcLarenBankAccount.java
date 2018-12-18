@@ -1,6 +1,6 @@
 //Simulate simple checking acc
-package Ch8Classes;
-public class BankAccountV1 {
+package Ch8Classes.AllClassesAPCSHW;
+public class IainMcLarenBankAccount {
     //State fields
     private double balance;
     private String name;
@@ -10,13 +10,13 @@ public class BankAccountV1 {
     private String address;
     private int dob;
     //Constructors
-    public BankAccountV1(String name, int ssn, String address, int dob){
+    public IainMcLarenBankAccount(String name, int ssn, String address, int dob){
         this.name = name;
         this.ssn = ssn;
         this.address = address;
         this.dob = dob;
     }
-    public BankAccountV1(String name, int ssn, String address, int dob, double balance, int pin){
+    public IainMcLarenBankAccount(String name, int ssn, String address, int dob, double balance, int pin){
         this.name = name;
         this.ssn = ssn;
         this.address = address;

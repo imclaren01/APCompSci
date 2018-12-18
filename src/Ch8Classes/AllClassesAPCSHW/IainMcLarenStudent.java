@@ -1,9 +1,9 @@
 //Class simulates student portal
-package Ch8Classes;
+package Ch8Classes.AllClassesAPCSHW;
 
 import java.math.BigInteger;
 
-public class Student {
+public class IainMcLarenStudent {
     //state fields
     private String name;
     private int grade;
@@ -16,14 +16,14 @@ public class Student {
     private char gender;
     private int attendance;
     //constructors
-    public Student(String name, int dob, char gender, String address, int grade){
+    public IainMcLarenStudent(String name, int dob, char gender, String address, int grade){
         this.name = name;
         this.dob = dob;
         this.gender = gender;
         this.address = address;
         this.grade = grade;
     }
-    public Student(String name, int dob, char gender, String address, int grade, double gpa){
+    public IainMcLarenStudent(String name, int dob, char gender, String address, int grade, double gpa){
         this.name = name;
         this.dob = dob;
         this.gender = gender;
@@ -72,4 +72,9 @@ public class Student {
         return attendance;
     }
     //No setters
+
+    //toString
+    public String toString(){
+        return "Name: " + name + "\nDOB: " + dob + "\nGrade year: " + grade;
+    }
 }

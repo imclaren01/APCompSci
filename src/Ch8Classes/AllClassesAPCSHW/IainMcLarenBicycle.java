@@ -1,8 +1,8 @@
-package Ch8Classes;
+package Ch8Classes.AllClassesAPCSHW;
 
 
 
-public class Bicycle {
+public class IainMcLarenBicycle {
 
     private double price;
 
@@ -28,17 +28,27 @@ public class Bicycle {
 
 
 
-    public Bicycle (double price, boolean isPurchased, String condition, int ageRange, String color) {
+    public IainMcLarenBicycle(double price, boolean isPurchased, String condition, int ageRange, String color) {
 
+        this.price = price;
+        this.isPurchased = isPurchased;
+        this.condition = condition;
+        this.ageRange = ageRange;
+        this.color = color;
 
 
     }
 
 
 
-    public Bicycle (double price, boolean isPurchased, String condition, int ageRange, String color, int gears) {
+    public IainMcLarenBicycle(double price, boolean isPurchased, String condition, int ageRange, String color, int gears) {
 
-
+        this.price = price;
+        this.isPurchased = isPurchased;
+        this.condition = condition;
+        this.ageRange = ageRange;
+        this.color = color;
+        this.gears = gears;
 
     }
 

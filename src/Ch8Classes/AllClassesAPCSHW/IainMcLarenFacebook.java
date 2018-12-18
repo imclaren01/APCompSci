@@ -1,8 +1,8 @@
-package Ch8Classes;
+package Ch8Classes.AllClassesAPCSHW;
 
 
 
-public class Facebook {
+public class IainMcLarenFacebook {
 
     //STATE FIELDS:
 
@@ -16,7 +16,7 @@ public class Facebook {
 
     private String email;
 
-    private int phoneNumber;
+    private String phoneNumber;
 
     private String password;
 
@@ -62,7 +62,7 @@ public class Facebook {
 
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
 
         return phoneNumber;
 
@@ -130,10 +130,24 @@ public class Facebook {
 
     //CONSTRUCTORS:
 
-    public Facebook(String name, int dob, char gender, String address, String email, int phoneNumber,
+    public IainMcLarenFacebook(String name, int dob, char gender, String address, String email, String phoneNumber,
 
-                    String password, String occupation, String status) {
+                               String password, String occupation, String status) {
+        this.name = name;
+        this.dob = dob;
+        this.gender = gender;
+        this.address = address;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.password = password;
+        this.occupation = occupation;
+        this.status = status;
+    }
 
+    public IainMcLarenFacebook(String name, String email, String password) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
     }
 
 
