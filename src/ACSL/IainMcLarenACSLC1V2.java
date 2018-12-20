@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class IainMcLarenACSLC1 {
+public class IainMcLarenACSLC1V2 {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("1int-sampledata-1129.txt");
         Scanner fileScan = new Scanner(file);
