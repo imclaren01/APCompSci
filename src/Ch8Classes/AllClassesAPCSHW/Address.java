@@ -1,4 +1,4 @@
-package Ch8Classes;
+package Ch8Classes.AllClassesAPCSHW;
 
 public class Address {
     //State fields

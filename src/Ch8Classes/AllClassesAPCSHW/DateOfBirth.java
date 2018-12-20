@@ -1,13 +1,13 @@
-package Ch8Classes;
+package Ch8Classes.AllClassesAPCSHW;
 
-public class DOB {
+public class DateOfBirth {
     //State fields
     private int day;
     private int month;
     private int year;
     //Constructors
 
-    public DOB(int day, int month, int year) {
+    public DateOfBirth(int day, int month, int year) {
         this.day = day;
         this.month = month;
         this.year = year;
@@ -27,23 +27,11 @@ public class DOB {
         return year;
     }
 
-    //Setters
-    public void setDay(int day) {
-        this.day = day;
-    }
-
-    public void setMonth(int month) {
-        this.month = month;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-    }
 //toString
     public String toString() {
         return "Date of Birth:" +
-                "\nDay: " + day +
-                "\nMonth: " + month +
-                "\nYear: " + year;
+                "/" + month +
+                "/" + day +
+                "/" + year;
     }
 }

@@ -75,6 +75,6 @@ public class IainMcLarenStudent {
 
     //toString
     public String toString(){
-        return "Name: " + name + "\nDOB: " + dob + "\nGrade year: " + grade;
+        return "Name: " + name + "\nDateOfBirth: " + dob + "\nGrade year: " + grade;
     }
 }

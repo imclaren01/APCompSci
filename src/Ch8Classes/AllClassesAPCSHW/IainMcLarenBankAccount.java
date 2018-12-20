@@ -7,16 +7,16 @@ public class IainMcLarenBankAccount {
     private int accountNum;
     private int ssn;
     private int pin;
-    private String address;
-    private int dob;
+    private Address address;
+    private DateOfBirth dob;
     //Constructors
-    public IainMcLarenBankAccount(String name, int ssn, String address, int dob){
+    public IainMcLarenBankAccount(String name, int ssn, Address address, DateOfBirth dob){
         this.name = name;
         this.ssn = ssn;
         this.address = address;
         this.dob = dob;
     }
-    public IainMcLarenBankAccount(String name, int ssn, String address, int dob, double balance, int pin){
+    public IainMcLarenBankAccount(String name, int ssn, Address address, DateOfBirth dob, double balance, int pin){
         this.name = name;
         this.ssn = ssn;
         this.address = address;
@@ -38,16 +38,16 @@ public class IainMcLarenBankAccount {
         return accountNum;
     }
 
-    public String getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public int getDob() {
+    public DateOfBirth getDob() {
         return dob;
     }
     //Setters
 
-    public void setAddress(String address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
     //Mutators
