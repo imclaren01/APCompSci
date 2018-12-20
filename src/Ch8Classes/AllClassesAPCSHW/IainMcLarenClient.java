@@ -32,10 +32,11 @@ public class IainMcLarenClient {
         fb.setOccupation("Living");
         System.out.println(fb.getOccupation());
         //Bank Account
-        IainMcLarenBankAccount iain = new IainMcLarenBankAccount("Iain McLaren", 1234678910, "21 Forest Park Ave", 110801);
+        /*IainMcLarenBankAccount iain = new IainMcLarenBankAccount("Iain McLaren", 1234678910, "21 Forest Park Ave", 110801);
         iain.deposit(998987698.87);
         System.out.println(iain);
         iain.withdraw(999999);
         System.out.println("New Balance: " + iain.getBalance());
+        */
     }
 }

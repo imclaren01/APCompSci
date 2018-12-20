@@ -29,9 +29,6 @@ public class DateOfBirth {
 
 //toString
     public String toString() {
-        return "Date of Birth:" +
-                "/" + month +
-                "/" + day +
-                "/" + year;
+        return "Date of Birth:" + month + "/" + day + "/" + year;
     }
 }

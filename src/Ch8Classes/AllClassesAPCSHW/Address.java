@@ -82,7 +82,7 @@ public class Address {
                 "\nHouse number: " + houseNum +
                 "\nApartment Number: '" + aptnum + '\'' +
                 "\nStreet: '" + street + '\'' +
-                "\n City: '" + city + '\'' +
+                "\nCity: '" + city + '\'' +
                 "\nState: '" + state + '\'' +
                 "\nZipcode: " + zipcode;
     }

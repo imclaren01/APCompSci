@@ -10,8 +10,8 @@ public class BankAccountClientV2 {
         System.out.println(iain);
         iain.withdraw(999999);
         System.out.println("New Balance: " + iain.getBalance());
-
-
+        System.out.println(iain.getAddress());
+        System.out.println(iain.getDob());
     }
 
 }
