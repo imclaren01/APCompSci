@@ -1,12 +1,12 @@
 package Ch8Classes.IainMcLarenGroceryList;
 
-public class GroceryItemOrder {
+public class IainMcLarenGroceryItem {
     private String name;
     private int quantity;
     private double ppu;
 
     //Constructor
-    public GroceryItemOrder(String name, int quantity, double ppu){
+    public IainMcLarenGroceryItem(String name, int quantity, double ppu){
         this.name = name;
         this.quantity = quantity;
         this.ppu = ppu;
@@ -35,7 +35,7 @@ public class GroceryItemOrder {
 
     @Override
     public String toString() {
-        return "GroceryItemOrder{" +
+        return "IainMcLarenGroceryItem{" +
                 "name='" + name + '\'' +
                 ", quantity=" + quantity +
                 ", ppu=" + ppu +

@@ -1,8 +1,8 @@
 package Ch8Classes.IainMcLarenMovieCollection;
 
-public class IainMcLarenMoviesClient {
+public class IainMcLarenMovies {
     public static void main(String[] args){
-        IainMcLarenDVDCollection movies = new IainMcLarenDVDCollection();
+        IainMcLarenDVDCollection1 movies = new IainMcLarenDVDCollection1();
         movies.addDVD("The Godfather", "Francis Ford Coppala", 1972, 24.95, true);
         movies.addDVD("District 9", "Neill Blomkamp", 2009, 19.95, false);
         movies.addDVD("Iron Man", "Jon Favreau", 2008, 15.95, false);

@@ -23,8 +23,8 @@ public class IainMcLarenDVD {
     public String toString() {
         DecimalFormat df = new DecimalFormat("###.##");
         if(blueray){
-            return "$" + df.format(cost) + "\t" + year + "\t" + title + "\t\t" + director + "\t\tBlu-Ray";
+            return "$" + df.format(cost) + "\t" + year + "\t" + title + "\t\t" + director + "\tBlu-Ray";
         } else{
-        return "$" + df.format(cost) + "\t" + year + "\t" + title + "\t\t" + director;
+        return "$" + df.format(cost) + "\t" + year + "\t" + title + "\t" + director;
     }   }
 }

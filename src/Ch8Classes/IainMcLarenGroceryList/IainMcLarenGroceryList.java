@@ -1,19 +1,17 @@
 package Ch8Classes.IainMcLarenGroceryList;
 
-import java.util.Arrays;
-
-public class GroceryList {
+public class IainMcLarenGroceryList {
     //State fields
-    private GroceryItemOrder[] list = new GroceryItemOrder[0];
+    private IainMcLarenGroceryItem[] list = new IainMcLarenGroceryItem[0];
     private int numItems;
 
     //Constructor
-    public GroceryList(){
+    public IainMcLarenGroceryList(){
         //Nothing
     }
     //Behaviors
-    public void addItem(GroceryItemOrder item){
-        GroceryItemOrder[] listTemp = new GroceryItemOrder[list.length + 1];
+    public void addItem(IainMcLarenGroceryItem item){
+        IainMcLarenGroceryItem[] listTemp = new IainMcLarenGroceryItem[list.length + 1];
         for(int i = 0; i < list.length; i++){
             listTemp[i] = list[i];
         }
@@ -28,7 +26,6 @@ public class GroceryList {
         return sum;
     }
     //toString
-    @Override
     public String toString() {
         String prnt = "";
         for(int i = 0; i < list.length;  i++){
