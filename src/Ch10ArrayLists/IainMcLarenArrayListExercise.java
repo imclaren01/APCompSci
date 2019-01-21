@@ -5,9 +5,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//import static sun.plugin2.os.windows.OSVERSIONINFOA.size;
 
-public class ArrayListExercise {
+public class IainMcLarenArrayListExercise {
 
     public static void main(String[] args) throws FileNotFoundException {
         Scanner fileRead = new Scanner(new File("data.txt"));
