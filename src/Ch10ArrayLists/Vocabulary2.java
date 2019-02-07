@@ -6,22 +6,25 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Vocabulary1 {
+public class Vocabulary2 {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner input1 = new Scanner(new File("text1.txt"));//Scanners for files
-        Scanner input2 = new Scanner(new File("text2.txt"));
+        Scanner input1 = new Scanner(new File("lear.txt"));//Scanners for files
+        Scanner input2 = new Scanner(new File("moby.txt"));
         ArrayList<String> list1 = uniqueWords(input1);
         ArrayList<String> list2 = uniqueWords(input2);
         ArrayList<String> overlap = overlap(list1, list2);
         System.out.println(percCalc(overlap, list1));
+        System.out.println(percCalc(overlap, list2));
     }
     public static double percCalc(ArrayList<String> overlap, ArrayList<String> list1){
         return overlap.size()*100.0/list1.size();
     }
     public static ArrayList<String> uniqueWords(Scanner input){ //Returns arraylist of strings containing unique wprds
+        input.useDelimiter("[^a-zA-Z']+");
         ArrayList<String> allWords = new ArrayList<>();         //Accepts Scanner
         while(input.hasNext()){                                 //Uses file to find all words and then parses the unique ones
-            allWords.add(input.next().toLowerCase());
+            String word = input.next();
+            allWords.add(word.toLowerCase());
         }
         Collections.sort(allWords);
         ArrayList<String> uniq = new ArrayList<>();
@@ -33,6 +36,7 @@ public class Vocabulary1 {
                 uniq.add(allWords.get(i));
             }
         }
+        System.out.println(uniq);
         return uniq;
     }
     public static ArrayList<String> overlap(ArrayList<String> list1, ArrayList<String> list2){
@@ -51,6 +55,7 @@ public class Vocabulary1 {
                 i2++;
             }
         }
+        System.out.println(matches);
         return matches;
     }
 }
