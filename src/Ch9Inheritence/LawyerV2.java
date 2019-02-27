@@ -1,13 +1,21 @@
 package Ch9Inheritence;
 
 public class LawyerV2 extends EmployeeV2{
-    public int getVacationDays(){
-        return 15; //2 weeks paid vacation
+    public LawyerV2(String name){
+        super(name);
     }
-    public String getVacationForm(){
-        return "pink"; //use the yellow form
+    public LawyerV2(String name, int experience){
+        super(name, experience);
     }
-    public void sue(){
-        System.out.println("Get sued");
+    public int getVacationDays() {
+        return 15;  //3 weeks' paid vacation
+    }
+
+    public String getVacationForm() {
+        return "pink";    //use the yellow form
+    }
+
+    public void sue() {
+        System.out.println("I'll see you in court!");
     }
 }

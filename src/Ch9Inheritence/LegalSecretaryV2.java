@@ -1,10 +1,17 @@
 package Ch9Inheritence;
 
 public class LegalSecretaryV2 extends SecretaryV2{
-    public double getSalary(){
-        return 45000; //Get paid $40,000/year
+    public LegalSecretaryV2(String name){
+        super(name);
     }
-    public void prepLegalDocs(){
-        System.out.println("PREPPED");
+    public LegalSecretaryV2(String name, int experience){
+        super(name, experience);
+    }
+    public double getSalary() {
+        return 45000.0;     //$45,000/year
+    }
+    public void getDictation(String text) {
+        System.out.println("Different than secretary. " +
+                "I can file all day..." + text);
     }
 }
